@@ -30,6 +30,11 @@ final class HomeViewController: UIViewController {
                 else {
                     return UITableViewCell()
                 }
+                cell.movieTapped = {_ in
+                    let detailViewController = MovieDetailViewController()
+                    detailViewController.modalPresentationStyle = .fullScreen
+                    self.present(detailViewController, animated: true)
+                }
                 return cell
             })
         //TODO: Fake data, will update in task/60489
