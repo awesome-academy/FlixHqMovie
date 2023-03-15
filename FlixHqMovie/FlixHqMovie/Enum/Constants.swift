@@ -45,6 +45,11 @@ enum LayoutOptions {
     case itemPoster
     case ibmPointLabel
     case addToMylistButton
+    case playMovieButton
+    case downloadMovieButton
+    case ageLabel
+    case nationalLabel
+    case subLabel
 
     var cornerRadious: CGFloat {
         switch self {
@@ -54,6 +59,16 @@ enum LayoutOptions {
             return 4
         case .addToMylistButton:
             return 0
+        case .playMovieButton:
+            return 10
+        case .downloadMovieButton:
+            return 10
+        case .ageLabel:
+            return 4
+        case .nationalLabel:
+            return 6
+        case .subLabel:
+            return 6
         }
     }
 
@@ -65,6 +80,16 @@ enum LayoutOptions {
             return 0
         case .addToMylistButton:
             return 2
+        case .playMovieButton:
+            return 0
+        case .downloadMovieButton:
+            return 0
+        case .ageLabel:
+            return 0
+        case .nationalLabel:
+            return 0
+        case .subLabel:
+            return 0
         }
     }
 }
